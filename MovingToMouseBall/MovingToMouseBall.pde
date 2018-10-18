@@ -6,6 +6,12 @@ void setup() {
   background(0);
 }
 void draw () {
+  println("Mouse X = "+mouseX);
+  println("Mouse Y = "+mouseY);
+  
+  println("Ball X = "+BallX);
+  println("Ball Y = "+BallY);
+  
   ellipse(BallX, BallY, 50, 50);
   if (mouseButton == LEFT || mouseButton == RIGHT) {
     if (BallX >= mouseX) {
